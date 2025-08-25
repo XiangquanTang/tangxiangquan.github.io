@@ -4,619 +4,254 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="./flexible.js"></script>
-    <link rel="stylesheet" type="text/css" href="./common.css" />
+    <script src="../common.js"></script>
+	<script src="../translate.js"></script>
+	<script src="../jQuery.js"></script>
+    <link rel="stylesheet" type="text/css" href="../common.css" />
     <link rel="stylesheet" type="text/css" href="./index.response.css" />
   </head>
   <body>
     <div class="page flex-col">
-      <div class="section_1 flex-row">
+      <div class="group_1 flex-row">
         <img
           class="image_1"
           referrerpolicy="no-referrer"
           src="./img/SketchPnge80e3ebf9f3621b782d1b03e63dab26ab7746080e812355815eed21f42ede013.png"
         />
         <span class="text_1">WGSR-Bench</span>
-        <div class="group_1 flex-row">
+        <div class="box_1 flex-row">
           <img
             class="thumbnail_1"
             referrerpolicy="no-referrer"
             src="./img/SketchPng8ee1658974d20f2e1abcdf87e755c756a45d7562ca68329288371e2b08569959.png"
           />
-          <span class="text_2">Search&nbsp;models,datasets</span>
+          <input type="text" style="margin-left: 0.5vw; width: 17vw;" placeholder="Search&nbsp;models,datasets"/>
         </div>
-        <a class="text_3" href=""
-            style="text-decoration: none;">Home</a>
-        <a class="text_4" href="../lanhu_datasets2/index.html"
-            style="text-decoration: none;">Datasets</a>
-        <span class="text_5">assessment&nbsp;centre</span>
-        <span class="text_6">中&nbsp;&nbsp;&nbsp;EN</span>
-        <div class="group_2 flex-col"></div>
+        <a class="text_3" href="" style="text-decoration: none;">Home</a>
+        <a class="text_4" href="../lanhu_homepggbench/index.html" style="text-decoration: none;">Leadbroad</a>
+        <a class="text_5" href="../lanhu_datasetspggbench/index.html" style="text-decoration: none;">Datasets</a>
+        <a class="text_6" href="../lanhu_evazuneizhuye/index.html" style="text-decoration: none;">Evaluation</a>
+        <button class="text_7" onclick="translateLanguage()">中&nbsp;|&nbsp;EN</button>
+        <button class="login" onclick="showPopup()">Log In</button>
+        <div class="register"><a href="../lanhu_register/index.html">Sign Up</a></div>
       </div>
-      <div class="group_8 flex-col">
-        <span class="paragraph_1">
-          WGSR-Bench: Wargame-based Game-theoretic 
-          <br />
-          <br />
-          <br />
-          Strategic Reasoning Benchmark for Large Models
+      <div class="group_2 flex-col">
+        <span class="text_10">WGSR-Bench</span>
+        <span class="text_11">
+          首个以兵棋推演为载体的大模型策略推理基准。团队从博弈决策出发创新性地提出了策略推理S-POE的结构化认知框架，构建了基于S-POE的大模型策略推理评估基准WGSR-Bench。
         </span>
-        <div class="text-wrapper_28 flex-row justify-between">
-          <span class="text_9">Leaderboard</span>
-          <span class="text_10">Datasets</span>
+        <div class="text-wrapper_2 flex-col">
+          <span class="text_12">查看更多</span>
         </div>
-        <div class="box_1 flex-col"><div class="block_1 flex-col"></div></div>
-        <div class="section_3 flex-row">
-          <span class="text_11">View</span>
-          <div class="box_3 flex-row">
-            <span class="text_12">Average&nbsp;(%)</span>
-            <img
-              class="thumbnail_2"
-              referrerpolicy="no-referrer"
-              src="./img/SketchPng45f9e0ac07f40e74da2458953917ca7724eaf05448d43a12ceea7cf9aa7be734.png"
-            />
+      </div>
+      <img
+        class="image_2"
+        referrerpolicy="no-referrer"
+        src="./img/SketchPngee1d4923d6e710636a8fedda15c9afbed92b1a71d756a05dc90726145de5282f.png"
+      />
+      <div class="text-wrapper_3">
+        <span class="text_13">🎉&nbsp;我们的优</span>
+        <span class="text_14">势</span>
+      </div>
+      <span class="text_15">
+        我们具备国内规模最大的兵棋推演数据库，还可以帮助您测评模型
+      </span>
+      <div class="group_3 flex-row justify-between">
+        <div class="section_1 flex-col">
+          <div class="image-text_1 flex-row justify-between">
+            <div class="image-wrapper_1 flex-col">
+              <img
+                class="thumbnail_2"
+                referrerpolicy="no-referrer"
+                src="./img/SketchPng7fdc5c9c58556806bd0cff413df3e4fafb1cadafbe2ba437a1a1ea88c873ec8f.png"
+              />
+              <img
+                class="thumbnail_3"
+                referrerpolicy="no-referrer"
+                src="./img/SketchPng0704a6484b7860384337cd6f6b1e3aa1ee43433aa9429aaa72dfe9e28a54195e.png"
+              />
+            </div>
+            <span class="text-group_1">评测数据采样范围宽广</span>
           </div>
-          <span class="text_13">by</span>
-          <div class="box_4 flex-row">
-            <span class="text_14">Date</span>
+          <span class="text_16">
+            庙算·人机对抗平台与庙算生态积累了当前国内规模最大的兵棋推演数据库。该数据库拥有超过40万场对抗复盘（包括文本数据量约2TB，图像视频数据量超过1PB）。
+          </span>
+        </div>
+        <div class="section_2 flex-col">
+          <div class="image-text_2 flex-row justify-between">
             <img
-              class="thumbnail_3"
+              class="image_3"
               referrerpolicy="no-referrer"
-              src="./img/SketchPng45f9e0ac07f40e74da2458953917ca7724eaf05448d43a12ceea7cf9aa7be734.png"
+              src="./img/SketchPnga5b20ec73f9c27f7beb2959e7496a81ec16251197a03d607879494a7a94686a4.png"
             />
+            <span class="text-group_2">全面评测大模型与人类策略推理能力</span>
           </div>
-          <span class="text_15">for</span>
-          <div class="box_5 flex-row">
-            <span class="text_16">All&nbsp;models</span>
+          <span class="text_17">
+            评测大模型覆盖闭源顶级商用模型如GPT-4与Claude，开源主流模型如Deepseek&nbsp;R1，LLaMA近15种。评测人类选手选取专业类院校约150名人员（涵盖普通级、优秀级、精英级不同等级）。
+          </span>
+        </div>
+        <div class="section_3 flex-col">
+          <div class="image-text_3 flex-row justify-between">
             <img
               class="thumbnail_4"
               referrerpolicy="no-referrer"
-              src="./img/SketchPng45f9e0ac07f40e74da2458953917ca7724eaf05448d43a12ceea7cf9aa7be734.png"
+              src="./img/SketchPngac75a9ca342b695c52e30c383fddbf06ee831300596a09e6214f970e0a68c280.png"
             />
+            <span class="text-group_3">评测基准覆盖策略推理关键能力</span>
           </div>
-        </div>
-        <div class="section_4 flex-row">
-            <span class="text_17">AVERAGE (%)</span>
-          <span class="paragraph_2">
-            100
-            <br />
-            80
-            <br />
-            60
-            <br />
-            40
-            <br />
-            20
+          <span class="text_18">
+            以S-POE结构化认知框架为基准，构建环境态势、对手风险、博弈策略生成为核心任务的策略推理子集MM-SA-Bench、PsyR-OM-Bench以及PGG-Bench。
           </span>
-          <div class="group_9 flex-col">
-            <div class="group_3 flex-col"></div>
-            <div class="group_4 flex-col"></div>
-            <div class="group_5 flex-col"></div>
-            <div class="group_6 flex-col"></div>
-            <div class="group_7 flex-col"></div>
-            <div class="text-wrapper_29 flex-row justify-between">
-              <span class="text_18">Jul’19</span>
-              <span class="text_19">Jan’20</span>
-              <span class="text_20">Jul’20</span>
-              <span class="text_21">Jan’21</span>
-              <span class="text_22">Jan’21</span>
-              <span class="text_23">Jan’22</span>
-              <span class="text_24">Jul’22</span>
-              <span class="text_25">Jan’23</span>
-              <span class="text_26">Jul’23</span>
-              <span class="text_27">Jan’24</span>
-              <span class="text_28">Jul’24</span>
-              <span class="text_29">Jan’25</span>
+        </div>
+      </div>
+      <div class="text-wrapper_4">
+        <span class="text_19">📝&nbsp;信息发</span>
+        <span class="text_20">布</span>
+      </div>
+      <span class="text_21">
+        发布平台新功能、兵棋推演大模型策略推理基准的最新信息
+      </span>
+      <div class="group_4 flex-row justify-between">
+        <div class="block_1 flex-col">
+          <div class="section_4 flex-row justify-between">
+            <div class="text-wrapper_5 flex-col">
+              <span class="text_22">平台信息</span>
             </div>
+            <span class="text_23">查看更多</span>
+          </div>
+          <div class="section_5 flex-row justify-between">
+            <div class="text-wrapper_6">
+              <span class="text_24">•</span>
+              <span class="text_25">2025-06-24</span>
+            </div>
+            <span class="text_26">
+              平台新增测评功能，用户可上传自己的模型进行测评
+            </span>
+          </div>
+          <div class="section_6 flex-col"></div>
+          <div class="section_7 flex-row justify-between">
+            <div class="text-wrapper_7">
+              <span class="text_27">•</span>
+              <span class="text_28">2025-06-10</span>
+            </div>
+            <span class="text_29">
+              平台新增测评功能，用户可上传自己的模型进行测评
+            </span>
+          </div>
+          <div class="section_8 flex-col"></div>
+          <div class="section_9 flex-row justify-between">
+            <div class="text-wrapper_8">
+              <span class="text_30">•</span>
+              <span class="text_31">2025-06-09</span>
+            </div>
+            <span class="text_32">
+              平台新增测评功能，用户可上传自己的模型进行测评
+            </span>
+          </div>
+          <div class="section_10 flex-col"></div>
+          <div class="section_11 flex-row justify-between">
+            <div class="text-wrapper_9">
+              <span class="text_33">•</span>
+              <span class="text_34">2025-06-07</span>
+            </div>
+            <span class="text_35">
+              平台新增测评功能，用户可上传自己的模型进行测评
+            </span>
           </div>
         </div>
-        <div class="section_5 flex-row">
-          <div class="image-text_9 flex-row justify-between">
-            <div class="box_8 flex-col"></div>
-            <span class="text-group_1">Other&nbsp;models</span>
+        <div class="block_2 flex-col">
+          <div class="box_3 flex-row justify-between">
+            <div class="text-wrapper_10 flex-col">
+              <span class="text_36">学术信息</span>
+            </div>
+            <span class="text_37">查看更多</span>
+          </div>
+          <div class="box_4 flex-row justify-between">
+            <div class="text-wrapper_11">
+              <span class="text_38">•</span>
+              <span class="text_39">2025-06-12</span>
+            </div>
+            <span class="text_40">
+              庙算·大模型策略推理基准WGSR-Bench正式发布
+            </span>
+          </div>
+          <div class="box_5 flex-col"></div>
+          <div class="box_6 flex-row justify-between">
+            <div class="text-wrapper_12">
+              <span class="text_41">•</span>
+              <span class="text_42">2025-06-10</span>
+            </div>
+            <span class="text_43">
+              构建了基于S-POE的大模型策略推理评估基准WGSR-Bench
+            </span>
+          </div>
+          <div class="box_7 flex-col"></div>
+          <div class="box_8 flex-row justify-between">
+            <div class="text-wrapper_13">
+              <span class="text_44">•</span>
+              <span class="text_45">2025-06-09</span>
+            </div>
+            <span class="text_46">
+              围绕环境态势、对手风险、博弈策略生成等核心任务设计测试样本
+            </span>
           </div>
           <div class="box_9 flex-col"></div>
-          <span class="text_30">
-            Models&nbsp;with&nbsp;highest&nbsp;Averyage&nbsp;(%)
-          </span>
-        </div>
-        <div class="section_6 flex-row">
-          <span class="text_31">Filter:</span>
-          <div class="text-wrapper_4 flex-col">
-            <span class="text_32">PsyR-OM-Bench</span>
-          </div>
-          <div class="text-wrapper_5 flex-col">
-            <span class="text_33">MM-SA-Bench</span>
-          </div>
-          <div class="text-wrapper_6 flex-col">
-            <span class="text_34">PGnBench</span>
-          </div>
-          <div class="text-wrapper_7 flex-col">
-            <span class="text_35">Edit&nbsp;Leaderboard</span>
-          </div>
-        </div>
-        <div class="section_7 flex-row">
-          <span class="text_36">Rank</span>
-          <span class="text_37">Model</span>
-          <span class="paragraph_3">
-            Average
-            <br />
-            （%）
-          </span>
-          <img
-            class="thumbnail_5"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng92b1bacf08c0e7fdd5ab26dbf7ab117a0fe1cf5f552571410e009b372a2affb1.png"
-          />
-          <span class="paragraph_4">
-            Extra
-            <br />
-            Training
-            <br />
-            Data
-          </span>
-          <span class="text_38">Paper</span>
-          <span class="text_39">Paper</span>
-          <span class="text_40">Result</span>
-          <span class="text_41">Year</span>
-          <div class="image-text_10 flex-row justify-between">
-            <span class="text-group_2">Tags</span>
-            <img
-              class="thumbnail_6"
-              referrerpolicy="no-referrer"
-              src="./img/SketchPng1c9af61e9f6f28f6e9530dafc0aa873fd2d186fbae1e4b6dee8d74e16ca7b606.png"
-            />
-          </div>
-        </div>
-        <div class="box_12 flex-col"></div>
-        <div class="section_8 flex-row">
-          <span class="text_42">1</span>
-          <div class="text-wrapper_8">
-            <span class="paragraph_5">
-              GPT-4&nbsp;o1
-              <br />
+          <div class="box_10 flex-row justify-between">
+            <div class="text-wrapper_14">
+              <span class="text_47">•</span>
+              <span class="text_48">2025-06-07</span>
+            </div>
+            <span class="text_49">
+              数据库拥有超过40万场对抗复盘（包括文本数据量约2TB，图像视频数据量超过1PB
             </span>
-            <span class="text_43">(300b)</span>
-          </div>
-          <span class="text_44">87</span>
-          <img
-            class="thumbnail_7"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="paragraph_6">
-            GPT-4o&nbsp;as&nbsp;the&nbsp;Gold&nbsp;Standard:&nbsp;A&nbsp;Scalable&nbsp;and&nbsp;
-            <br />
-            General&nbsp;Purpose&nbsp;Approach&nbsp;to&nbsp;Filter&nbsp;Language&nbsp;
-            <br />
-            Model&nbsp;Pretraining&nbsp;Data
-          </span>
-          <img
-            class="thumbnail_8"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_45">2024</span>
-          <div class="text-wrapper_9 flex-col">
-            <span class="text_46">few-shot</span>
           </div>
         </div>
-        <div class="box_14 flex-col"></div>
-        <div class="section_9 flex-row">
-          <span class="text_47">2</span>
-          <span class="paragraph_7">
-            Llama&nbsp;3.1
-            <br />
-            (405B)
-          </span>
-          <span class="text_48">86.6</span>
-          <img
-            class="thumbnail_9"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_49">
-            Llama&nbsp;3&nbsp;Meets&nbsp;MoE:&nbsp;Efficient&nbsp;Upcycling
-          </span>
+      </div>
+      <div class="text-wrapper_15">
+        <span class="text_50">📧&nbsp;关于我</span>
+        <span class="text_51">们</span>
+      </div>
+      <span class="text_52">团队成员来自中科院自动化所智能系统中心</span>
+      <div class="group_5 flex-row">
+        <div class="image-text_4 flex-row justify-between">
           <img
             class="label_1"
             referrerpolicy="no-referrer"
-            src="./img/SketchPng85143a0b04f43747738f31b246bd75ad5beb19897b8838b782723f3115ebd260.png"
+            src="./img/SketchPng2ce57a4479f532046d1f897b2c37c114f78a59c2c1fd8a19711b2c8b22dea4a1.png"
           />
-          <img
-            class="thumbnail_10"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_50">2024</span>
-          <div class="text-wrapper_10 flex-col">
-            <span class="text_51">chain-of-thought</span>
+          <div class="text-group_4 flex-col justify-between">
+            <span class="text_53">
+              智能系统与工程研究中心成立于2018年4月28日，是中国科学院自动化研究所立足智能学科优势和技术积累，面向国家未来重大战略需求而建立的核心部门。中心的定位是：瞄准国家战略需求，着眼于未来智能技术带来的理论变革及应用挑战，研究面向智能决策的人机对抗智能理论、技术模型和关键算法，形成人机对抗智能原型实用系统和公共开放平台，为智能决策相关领域提供理论基础和技术标准支撑，形成核心技术系统优势，创新资源共建共享，推动人机对抗智能技术生态构建，建设成国际上具备影响力的智能系统与工程研究机构。
+            </span>
+            <span class="text_54">
+              电话：010-82544577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮编：100190&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传真：010-82544577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：**&#64;ia.ac.cn
+            </span>
           </div>
         </div>
-        <div class="box_16 flex-col"></div>
-        <div class="section_10 flex-row">
-          <span class="text_52">3</span>
-          <div class="text-wrapper_11">
-            <span class="paragraph_8">
-              Llama&nbsp;3.1
-              <br />
-            </span>
-            <span class="text_53">(70B)</span>
-          </div>
-          <span class="text_54">86.0</span>
-          <img
-            class="thumbnail_11"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_55">
-            Llama&nbsp;3&nbsp;Meets&nbsp;MoE:&nbsp;Efficient&nbsp;Upcycling
-          </span>
+        <div class="image-text_5 flex-row justify-between">
           <img
             class="label_2"
             referrerpolicy="no-referrer"
-            src="./img/SketchPng85143a0b04f43747738f31b246bd75ad5beb19897b8838b782723f3115ebd260.png"
-          />
-          <img
-            class="thumbnail_12"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_56">2024</span>
-          <div class="text-wrapper_12 flex-col">
-            <span class="text_57">fine-tuned</span>
-          </div>
-        </div>
-        <div class="box_18 flex-col"></div>
-        <div class="section_11 flex-row">
-          <span class="text_58">4</span>
-          <span class="paragraph_9">
-            Gemini&nbsp;Ultra
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_59">83.7</span>
-          <img
-            class="thumbnail_13"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <img
-            class="thumbnail_14"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_60">2024</span>
-          <div class="text-wrapper_13 flex-col">
-            <span class="text_61">5-shot</span>
-          </div>
-        </div>
-        <div class="box_20 flex-col"></div>
-        <div class="section_12 flex-row">
-          <span class="text_62">5</span>
-          <span class="paragraph_10">
-            Claude&nbsp;3&nbsp;Sonnet
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_63">79</span>
-          <img
-            class="thumbnail_15"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_64">
-            The&nbsp;Claude&nbsp;3&nbsp;Model&nbsp;Family:&nbsp;Opus,&nbsp;Sonnet,&nbsp;Haiku
-          </span>
-          <img
-            class="thumbnail_16"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_65">2024</span>
-          <div class="text-wrapper_14 flex-col">
-            <span class="text_66">chain-of-thought</span>
-          </div>
-        </div>
-        <div class="box_22 flex-col"></div>
-        <div class="section_13 flex-row">
-          <span class="text_67">6</span>
-          <span class="paragraph_11">
-            Qwen1.5&nbsp;72B
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_68">77.5</span>
-          <img
-            class="thumbnail_17"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <img
-            class="thumbnail_18"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_69">2024</span>
-          <div class="text-wrapper_15 flex-col">
-            <span class="text_70">fine-tuned</span>
-          </div>
-        </div>
-        <div class="box_24 flex-col"></div>
-        <div class="section_14 flex-row">
-          <span class="text_71">7</span>
-          <span class="paragraph_12">
-            Claude&nbsp;3&nbsp;Haiku
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_72">75.2</span>
-          <img
-            class="thumbnail_19"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_73">
-            The&nbsp;Claude&nbsp;3&nbsp;Model&nbsp;Family:&nbsp;Opus,&nbsp;Sonnet,&nbsp;Haiku
-          </span>
-          <img
-            class="thumbnail_20"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_74">2024</span>
-          <div class="text-wrapper_16 flex-col">
-            <span class="text_75">5-shot</span>
-          </div>
-        </div>
-        <div class="box_26 flex-col"></div>
-        <div class="section_15 flex-row">
-          <span class="text_76">8</span>
-          <div class="text-wrapper_17">
-            <span class="paragraph_13">
-              GPT-4&nbsp;o1
-              <br />
-            </span>
-            <span class="text_77">(300b)</span>
-          </div>
-          <span class="text_78">87</span>
-          <img
-            class="thumbnail_21"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="paragraph_14">
-            GPT-4o&nbsp;as&nbsp;the&nbsp;Gold&nbsp;Standard:&nbsp;A&nbsp;Scalable&nbsp;and&nbsp;
-            <br />
-            General&nbsp;Purpose&nbsp;Approach&nbsp;to&nbsp;Filter&nbsp;Language&nbsp;
-            <br />
-            Model&nbsp;Pretraining&nbsp;Data
-          </span>
-          <img
-            class="thumbnail_22"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_79">2024</span>
-          <div class="text-wrapper_18 flex-col">
-            <span class="text_80">few-shot</span>
-          </div>
-        </div>
-        <div class="box_28 flex-col"></div>
-        <div class="section_16 flex-row">
-          <span class="text_81">9</span>
-          <span class="paragraph_15">
-            Llama&nbsp;3.1
-            <br />
-            (405B)
-          </span>
-          <span class="text_82">86.6</span>
-          <img
-            class="thumbnail_23"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_83">
-            Llama&nbsp;3&nbsp;Meets&nbsp;MoE:&nbsp;Efficient&nbsp;Upcycling
-          </span>
-          <img
-            class="label_3"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng85143a0b04f43747738f31b246bd75ad5beb19897b8838b782723f3115ebd260.png"
-          />
-          <img
-            class="thumbnail_24"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_84">2024</span>
-          <div class="text-wrapper_19 flex-col">
-            <span class="text_85">chain-of-thought</span>
-          </div>
-        </div>
-        <div class="box_30 flex-col"></div>
-        <div class="section_17 flex-row">
-          <span class="text_86">10</span>
-          <div class="text-wrapper_20">
-            <span class="paragraph_16">
-              Llama&nbsp;3.1
-              <br />
-            </span>
-            <span class="text_87">(70B)</span>
-          </div>
-          <span class="text_88">86.0</span>
-          <img
-            class="thumbnail_25"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng909c4e744b28ce020304bcb41fae9bd14d1cbbda5b9f9d64958650b692c21144.png"
-          />
-          <span class="text_89">
-            Llama&nbsp;3&nbsp;Meets&nbsp;MoE:&nbsp;Efficient&nbsp;Upcycling
-          </span>
-          <img
-            class="label_4"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng85143a0b04f43747738f31b246bd75ad5beb19897b8838b782723f3115ebd260.png"
-          />
-          <img
-            class="thumbnail_26"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_90">2024</span>
-          <div class="text-wrapper_21 flex-col">
-            <span class="text_91">fine-tuned</span>
-          </div>
-        </div>
-        <div class="box_32 flex-col"></div>
-        <div class="section_18 flex-row">
-          <span class="text_92">11</span>
-          <span class="paragraph_17">
-            Gemini&nbsp;Ultra
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_93">83.7</span>
-          <img
-            class="thumbnail_27"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng909c4e744b28ce020304bcb41fae9bd14d1cbbda5b9f9d64958650b692c21144.png"
-          />
-          <img
-            class="thumbnail_28"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_94">2024</span>
-          <div class="text-wrapper_22 flex-col">
-            <span class="text_95">5-shot</span>
-          </div>
-        </div>
-        <div class="box_34 flex-col"></div>
-        <div class="section_19 flex-row">
-          <span class="text_96">12</span>
-          <span class="paragraph_18">
-            Claude&nbsp;3&nbsp;Sonnet
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_97">79</span>
-          <img
-            class="thumbnail_29"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_98">
-            The&nbsp;Claude&nbsp;3&nbsp;Model&nbsp;Family:&nbsp;Opus,&nbsp;Sonnet,&nbsp;Haiku
-          </span>
-          <img
-            class="thumbnail_30"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_99">2024</span>
-          <div class="text-wrapper_23 flex-col">
-            <span class="text_100">chain-of-thought</span>
-          </div>
-        </div>
-        <div class="box_36 flex-col"></div>
-        <div class="section_20 flex-row">
-          <span class="text_101">13</span>
-          <span class="paragraph_19">
-            Qwen1.5&nbsp;72B
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_102">77.5</span>
-          <img
-            class="thumbnail_31"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <img
-            class="thumbnail_32"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_103">2024</span>
-          <div class="text-wrapper_24 flex-col">
-            <span class="text_104">fine-tuned</span>
-          </div>
-        </div>
-        <div class="box_38 flex-col"></div>
-        <div class="section_21 flex-row">
-          <span class="text_105">14</span>
-          <span class="paragraph_20">
-            Claude&nbsp;3&nbsp;Haiku
-            <br />
-            (5-shot)
-          </span>
-          <span class="text_106">75.2</span>
-          <img
-            class="thumbnail_33"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng760ab4554ae7bbf354aa054423fe3ba405106acd61c39fb77606d5b5de479a1c.png"
-          />
-          <span class="text_107">
-            The&nbsp;Claude&nbsp;3&nbsp;Model&nbsp;Family:&nbsp;Opus,&nbsp;Sonnet,&nbsp;Haiku
-          </span>
-          <img
-            class="thumbnail_34"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPngb6228227130ced9155e11905f24f7e2b8f874ce6b3bc6624f771e3fdaa2e630e.png"
-          />
-          <span class="text_108">2024</span>
-          <div class="text-wrapper_25 flex-col">
-            <span class="text_109">5-shot</span>
-          </div>
-        </div>
-        <div class="box_40 flex-col"></div>
-        <div class="image-text_11 flex-row">
-          <div class="text-group_6 flex-col">
-            <span class="text_110">
-              The&nbsp;Intelligent&nbsp;System&nbsp;and&nbsp;Engineering&nbsp;Research&nbsp;Center,&nbsp;founded&nbsp;on&nbsp;April&nbsp;28,&nbsp;2018,&nbsp;is&nbsp;a&nbsp;core&nbsp;department&nbsp;established&nbsp;by&nbsp;the&nbsp;Institute&nbsp;of&nbsp;Automation&nbsp;of&nbsp;the&nbsp;Chinese&nbsp;Academy&nbsp;of&nbsp;Sciences&nbsp;based&nbsp;on&nbsp;the&nbsp;advantages&nbsp;of&nbsp;intelligent&nbsp;disciplines&nbsp;and&nbsp;technology&nbsp;accumulation&nbsp;and&nbsp;facing&nbsp;the&nbsp;major&nbsp;strategic&nbsp;needs&nbsp;of&nbsp;the&nbsp;country&nbsp;in&nbsp;the&nbsp;future.
-            </span>
-            <span class="paragraph_21">
-              About&nbsp;Us:
-              <br />
-            </span>
-          </div>
-          <img
-            class="label_5"
-            referrerpolicy="no-referrer"
             src="./img/SketchPng221318ec62418c3fde3aa503b11da1f8dc6ea078914aadf4bed7f782ce9c76be.png"
           />
-        </div>
-        <div class="image-text_12 flex-row justify-between">
-          <img
-            class="label_6"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng49d6b739f9674e768d9a26144ca586bfd14f1b77a3cde18e66aa14eb2aa28639.png"
-          />
-          <div class="text-group_4">
-            <span class="text_111">
-              Do&nbsp;you&nbsp;have&nbsp;any&nbsp;questions&nbsp;about&nbsp;WGSR&nbsp;Bench?&nbsp;Please&nbsp;proceed&nbsp;through
+          <div class="text-group_5 flex-col justify-between">
+            <span class="text_53">
+              智能系统与工程研究中心成立于2018年4月28日，是中国科学院自动化研究所立足智能学科优势和技术积累，面向国家未来重大战略需求而建立的核心部门。中心的定位是：瞄准国家战略需求，着眼于未来智能技术带来的理论变革及应用挑战，研究面向智能决策的人机对抗智能理论、技术模型和关键算法，形成人机对抗智能原型实用系统和公共开放平台，为智能决策相关领域提供理论基础和技术标准支撑，形成核心技术系统优势，创新资源共建共享，推动人机对抗智能技术生态构建，建设成国际上具备影响力的智能系统与工程研究机构。
             </span>
-            <span class="text_112">&nbsp;wgsr.benchmark&#64;XX.com</span>
-            <span class="text_113">
-              &nbsp;Contact&nbsp;us&nbsp;or&nbsp;create&nbsp;an&nbsp;issue&nbsp;on&nbsp;Github.&nbsp;If&nbsp;you&nbsp;have&nbsp;potential&nbsp;cooperation&nbsp;intentions,&nbsp;please&nbsp;contact&nbsp;XXX&#64;ia.ac.cn&nbsp;.
+            <span class="text_54">
+              电话：010-82544577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮编：100190&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传真：010-82544577&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;邮箱：**&#64;ia.ac.cn
             </span>
           </div>
         </div>
-        <div class="box_41 flex-col"></div>
-        <img
-          class="image_2"
-          referrerpolicy="no-referrer"
-          src="./img/SketchPngb1ad5e63c8feb73bcb4958e46ef30c962f3b9f06aae86361686ba215ecddce1a.png"
-        />
-        <div class="image-wrapper_1 flex-col">
-          <img
-            class="image_3"
-            referrerpolicy="no-referrer"
-            src="./img/SketchPng8617750c446bf9e4b0e59b68fe83666657aed3d91c0b7d039e605cf590efa2a4.png"
-          />
-        </div>
       </div>
+	  <div class="popup" id="popup">
+		  <span style="font-size: 1.2vw; font-family: AppleSystemUIFont;">登录筛选</span>
+		  <div style="display: flex; width: 86%; margin: 3vw auto;">
+		  <a class="popupA" href="../lanhu_login/index.html" style="margin-left: 1.5vw;">管理员</a>
+		  <a class="popupA" href="../lanhu_login/index.html" style="margin-left: 4.7vw;">用户</a>
+		  </div>
+		  <button class="hideBtn" onclick="hidePopup()"></button>
+	  </div>
     </div>
   </body>
 </html>

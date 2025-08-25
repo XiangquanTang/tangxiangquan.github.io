@@ -1,0 +1,159 @@
+body * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+body {
+  font-family: PingFangSC-Regular, Roboto, Helvetica Neue, Helvetica, Tahoma,
+    Arial, PingFang SC-Light, Microsoft YaHei;
+	margin: 0;
+}
+input {
+  background-color: transparent;
+  border: 0;
+}
+button {
+  margin: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+}
+
+button:active {
+  opacity: 0.6;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.justify-start {
+  display: flex;
+  justify-content: flex-start;
+}
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-end {
+  display: flex;
+  justify-content: flex-end;
+}
+.justify-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+.justify-around {
+  display: flex;
+  justify-content: space-around;
+}
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+.align-start {
+  display: flex;
+  align-items: flex-start;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.align-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+.textLeadbroad {
+	height: 1.57vw;
+	overflow-wrap: break-word;
+	color: rgba(67, 85, 204, 1);
+	font-size: 1.14vw;
+	font-family: PingFang SC-Medium;
+	font-weight: 500;
+	text-align: left;
+	white-space: nowrap;
+	line-height: 1.57vw;
+	margin: 1.25vw 0 0 3vw;
+	text-decoration: none;
+}
+
+.login {
+	height: 1.57vw;
+	overflow-wrap: break-word;
+	color: #1C1C1C;
+	font-size: 1.14vw;
+	font-family: PingFang SC-Medium;
+	font-weight: 500;
+	text-align: left;
+	white-space: nowrap;
+	line-height: 1.57vw;
+	margin: 1.27vw 0 0 3vw;
+	text-decoration: none;
+}
+
+.register {
+	width: 5.5vw;
+	height: 1.9vw;
+	text-align: center;
+	font-size: 1.14vw;
+	font-family: PingFang SC-Medium;
+	font-weight: 500;
+	white-space: nowrap;
+	line-height: 1.57vw;
+	margin: 1.27vw 0 0 3vw;
+	background: linear-gradient(to right, #8695F3, #B1BAFF);
+	border-radius: 1vw;
+}
+
+.register a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 30vw;
+	height: 12vw;
+	background-color: #FFFFFF;
+	z-index: 9999;
+	text-align: center;
+	padding-top: 1.5vw;
+	border-radius: 1.5vw;
+}
+
+.popupA {
+	width: 9vw;
+	height: 3vw;
+	background: linear-gradient(to right, #7789FF, #8695F3);
+	font-size: 1.2vw;
+	text-decoration: none;
+	color: #FFFFFF;
+	border-radius: 1vw;
+	display: block;
+	text-align: center;
+	line-height: 3vw;
+}
+
+.hideBtn {
+	position: fixed;
+	left: 88%;
+	top: 10%;
+	width: 2vw;
+	height: 2vw;
+	background-image: url(lanhu_home/img/reback.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}

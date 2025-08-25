@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="../jQuery.js"></script>
+		<script src="./index.js"></script>
+		<script src="../common.js"></script>
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+	</head>
+	<body>
+		<div class="topTitle"><span>Welcome to WGSR Bench</span></div>
+		<div class="data">
+			<span class="ordinarySpan">用户名</span>
+			<input class="inputOrdinary" type="text" placeholder="请输入你的用户名" />
+			
+			<span class="ordinarySpan">单位</span><br />
+			<select name="units" class="units">
+				<option value="default">请选择单位类型</option>
+				<option value="school">学校</option>
+				<option value="company">公司</option>
+			</select><br />
+			
+			<span class="ordinarySpan">邮箱</span>
+			<input class="inputOrdinary" type="text" id="email" placeholder="请输入你的邮箱" />
+			
+			<div style="width: 100%;"><span class="ordinarySpan">密码</span><span style="float: right; color: #4355CC;">忘记密码?</span></div>
+			<input class="inputOrdinary" type="password" id="password" placeholder="请输入你的密码"/>
+			
+			<input type="checkbox" name="contract" value="contract" class="contractCbox"/><span class="ordinarySpan">记住邮箱和密码</span>
+			
+			<button class="loginBtn" onclick="login()">登录</button>
+			
+			<div style="display: flex; margin-top: 1.2vw; margin-bottom: 1.2vw;">
+			<div class="lineBox"><hr /></div>
+			<div style="margin-left: 1vw; margin-right: 1vw;"><span class="specialSpan">Or</span></div>
+			<div class="lineBox"><hr /></div>
+			</div>
+			
+			<button class="loginGithub" onclick="loginGithub()"><img src="./img/Github.png" class="btnImg"/><span class="btnSpan">Continue with Github</span></button>
+			
+			<button class="loginGoogle" onclick="loginGoogle()"><img src="./img/Google.png" class="btnImg"/><span class="btnSpan"></span>Continue with Google</button>
+			
+			<div style="text-align: center; width: 100%; margin-top: 1.2vw;"><span class="ordinarySpan">你没有账户吗?<a href="../lanhu_register/index.html" style="text-decoration: none; color: #8695F3;">注册</a></span></div>
+		</div>
+	</body>
+</html>

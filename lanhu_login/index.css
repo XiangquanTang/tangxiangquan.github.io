@@ -1,0 +1,126 @@
+.topTitle {
+	width: 37vw;
+	margin: auto;
+	margin-top: 5vw;
+}
+
+.topTitle span {
+	font-size: 3vw;
+	font-weight: 600;
+	color: #1C1C1C;
+	font-family: PingFang SC-Semibold;
+}
+
+.data {
+	width: 23vw;
+	margin: 2.5vw auto;
+}
+
+.inputOrdinary {
+	width: 98%;
+	height: 2.2vw;
+	color: #CACEEE;
+	border: 0.08vw solid #CACEEE;
+	border-radius: 0.2vw;
+}
+
+.units {
+	width: 100%;
+	height: 2.4vw;
+	color: #1C1C1C;
+	border: 0.08vw solid #CACEEE;
+	border-radius: 0.2vw;
+	margin-bottom: 1.2vw;
+}
+
+.loginBtn {
+	width: 100%;
+	height: 2.5vw;
+	color: white;
+	font-weight: 500;
+	font-family: PingFang SC-Medium;
+	background: linear-gradient(to right, #8695F3, #B1BAFF);
+	border: none;
+	border-radius: 0.5vw;
+}
+
+.loginGithub {
+	width: 100%;
+	height: 2.5vw;
+	color: white;
+	font-weight: 500;
+	font-family: PingFang SC-Medium;
+	background: linear-gradient(to right, #66677F, #A0A6D0);
+	border: none;
+	border-radius: 0.5vw;
+}
+
+.loginGoogle {
+	width: 100%;
+	height: 2.5vw;
+	color: white;
+	font-weight: 500;
+	font-family: PingFang SC-Medium;
+	background: linear-gradient(to right, #F371A7, #FFB1B9);
+	border: none;
+	border-radius: 0.5vw;
+	margin-top: 1vw;
+}
+
+.ordinarySpan {
+	font-family: PingFang SC-Regular;
+	font-size: 1vw;
+}
+
+/* 设置输入框默认文字样式 */
+input::-webkit-input-placeholder {
+	color: #CACEEE;
+	font-size: 0.8vw;
+}
+
+.specialSpan {
+	font-family: Inter, Inter;
+	font-weight: 400;
+	font-size: 1vw;
+	color: #66677F;
+	font-style: italic;
+}
+
+hr {
+	border: 0.5px dotted #ccc;
+	width: 100%;
+}
+
+.lineBox {
+	width: 39%;
+	margin: auto;
+}
+
+.btnImg {
+	height: 1vw;
+	width: 1vw;
+	float: left;
+	margin-left: 1vw;
+	margin-top: 0.25vw;
+}
+
+.btnSpan {
+	margin-left: -1.6vw;
+}
+
+body {
+	font-size: 1vw;
+}
+
+input {
+	margin-top: 0.4vw;
+	margin-bottom: 1.2vw;
+}
+
+button {
+	font-size: 1vw;
+}
+
+.contractCbox {
+	margin-left: 0.5vw;
+}
