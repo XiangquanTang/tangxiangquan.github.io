@@ -698,3 +698,38 @@
   white-space: nowrap;
   line-height: 1.15vw;
 }
+
+/* 访问原始数据链接样式 */
+.raw-data-link {
+  display: inline-block;
+  margin-left: 1cm; /* 间隔一公分 */
+  padding: 0.4vw 1vw;
+  background: linear-gradient(to right, #8695F3, #B1BAFF);
+  color: #FFFFFF;
+  font-size: 0.93vw;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 0.3vw;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  line-height: 1.46vw;
+}
+
+.raw-data-link:hover {
+  background: linear-gradient(to right, #7789FF, #8695F3);
+  transform: translateY(-0.1vw);
+  box-shadow: 0 0.2vw 0.5vw rgba(108, 127, 255, 0.3);
+}
+
+.raw-data-link:active {
+  transform: translateY(0);
+  box-shadow: 0 0.1vw 0.3vw rgba(108, 127, 255, 0.2);
+}
+
+/* 调整 group_8 布局以适应新链接 */
+.group_8 {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}

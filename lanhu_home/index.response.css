@@ -1244,3 +1244,89 @@
   line-height: 1.88vw;
   margin-top: 1.2vw;
 }
+
+/* 新闻滚动容器样式 */
+.news-scroll-container {
+  max-height: 14vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 1.61vw;
+  margin-top: 0.5vw;
+}
+
+/* 滚动条样式 */
+.news-scroll-container::-webkit-scrollbar {
+  width: 0.3vw;
+}
+
+.news-scroll-container::-webkit-scrollbar-track {
+  background: rgba(225, 224, 244, 0.3);
+  border-radius: 0.15vw;
+}
+
+.news-scroll-container::-webkit-scrollbar-thumb {
+  background: rgba(108, 127, 255, 0.5);
+  border-radius: 0.15vw;
+}
+
+.news-scroll-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(108, 127, 255, 0.8);
+}
+
+/* 新闻项链接样式 */
+.news-item {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.news-item:hover {
+  background-color: rgba(108, 127, 255, 0.05);
+  transform: translateX(0.3vw);
+}
+
+.news-item:hover .text_26,
+.news-item:hover .text_29,
+.news-item:hover .text_32,
+.news-item:hover .text_35,
+.news-item:hover .text_40,
+.news-item:hover .text_43,
+.news-item:hover .text_46,
+.news-item:hover .text_49 {
+  color: rgba(108, 127, 255, 1);
+}
+
+/* 查看更多链接样式 */
+.view-more-link {
+  text-decoration: none;
+  color: rgba(108, 127, 255, 1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.view-more-link:hover {
+  color: rgba(67, 85, 204, 1);
+  transform: translateX(0.2vw);
+}
+
+.view-more-link::after {
+  content: ' →';
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.view-more-link:hover::after {
+  opacity: 1;
+}
+
+/* 调整block容器内边距以适应滚动 */
+.block_1, .block_2 {
+  padding: 1.5vw 0;
+}
+
+.section_4, .box_3 {
+  margin: 0 1.61vw;
+}

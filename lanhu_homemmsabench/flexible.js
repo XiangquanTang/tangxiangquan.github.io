@@ -1,105 +1,152 @@
 // 折线图获取初始化数据
 const labels = []; // 设置 X 轴上对应的标签
 const datas = [];
+
 function getAverageScore() {
-	$.ajax({
-		url: "https://localhost:44307/api/Person/getAverageScore",
-		type: 'get',
-		dataType: 'json',
-		success: function(data) {
-			if (data != null) {
-				$.each(data, function(key, item) {
-					labels.push(key);
-					datas.push(item);
-				});
-			}
-		},
-		error: function(xhr) {
-			console.log("请求发生错误，状态码：" + xhr.status);
-		}
-	})
+    $.ajax({
+        url: "https://localhost:44307/api/Person/getAverageScore",
+        type: 'get',
+        dataType: 'json',
+        success: function(data) {
+            if (data != null) {
+                // 清空数组
+                labels.length = 0;
+                datas.length = 0;
+                
+                $.each(data, function(key, item) {
+                    labels.push(key);
+                    datas.push(item);
+                });
+                
+                // 在数据加载完成后创建图表
+                initChart();
+            }
+        },
+        error: function(xhr) {
+            console.log("请求发生错误，状态码：" + xhr.status);
+            // 请求失败时使用本地数据
+            useLocalData();
+        }
+    });
 }
+
+// 使用本地数据作为备选方案
+function useLocalData() {
+    // 清空数组
+    labels.length = 0;
+    datas.length = 0;
+    
+    // 使用 comprehensiveData.overallScores 的数据
+    Object.entries(comprehensiveData.overallScores).forEach(([key, value]) => {
+        labels.push(key);
+        datas.push(value);
+    });
+    
+    // 创建图表
+    initChart();
+}
+
+function initChart() {
+    const ctx = document.getElementById('myChart');
+    
+    // 检查数据是否为空
+    if (labels.length === 0 || datas.length === 0) {
+        console.warn("图表数据为空，使用本地数据");
+        useLocalData();
+        return;
+    }
+    
+    const data = {
+        labels: labels,
+        datasets: [{
+            label: '综合得分',
+            data: datas,
+            fill: false,
+            borderColor: 'rgba(59, 130, 246, 0.8)',
+            backgroundColor: 'rgba(59, 130, 246, 0.1)',
+            pointBackgroundColor: 'rgba(59, 130, 246, 1)',
+            pointBorderColor: '#fff',
+            pointBorderWidth: 2,
+            pointRadius: 6,
+            pointHoverRadius: 8,
+            tension: 0.1
+        }]
+    };
+    
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            responsive: true,
+            interaction: {
+                intersect: false,
+            },
+            scales: {
+                x: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: '人机综合表现对比分析',
+                        font: {
+                            size: 20,
+                            weight: 'bold'
+                        }
+                    },
+                    offset: true,
+                    grid: {
+                        display: false
+                    },
+                    ticks: {
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        }
+                    }
+                },
+                y: {
+                    display: true,
+                    min: 0,
+                    max: 100,
+                    ticks: {
+                        stepSize: 20,
+                        font: {
+                            size: 12,
+                            weight: 'bold'
+                        },
+                        callback: function(value) {
+                            return value + '%';
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: 'AVERAGE(%)',
+                        font: {
+                            size: 20,
+                            weight: 'bold'
+                        }
+                    },
+                    grid: {
+                        display: true,
+                        color: 'rgba(0,0,0,0.1)'
+                    }
+                }
+            }
+        }
+    };
+    
+    const myChart = new Chart(ctx, config);
+}
+
+// 直接使用本地数据初始化（如果不需要 API 数据的话）
+// useLocalData();
+
+// 或者尝试获取 API 数据，失败时使用本地数据
 getAverageScore();
-
-const ctx = document.getElementById('myChart');
-const data = {
-	labels: labels,
-	datasets: [{
-		label: '',
-		data: datas,
-		fill: false,
-		borderColor: 'rgba(59, 130, 246, 0.5)', // 设置线的颜色
-		backgroundColor: ['rgba(30, 64, 175, 1)'], // 设置点的填充色
-		pointStyle: 'circle', // 设置点类型为圆点
-		pointRadius: 6, // 设置圆点半径
-		pointHoverRadius: 10, // 设置鼠标移动上去后圆点半径
-		tension: 0.1
-	}]
-};
-const config = {
-	type: 'line', // 设置图表类型
-	data: data,
-	options: {
-		plugins: {
-			legend: {
-				display: false // 隐藏图例（label: '我的第一个折线图'）
-			}
-		},
-		responsive: true, // 设置图表为响应式
-
-		interaction: { // 设置每个点的交互
-			intersect: false,
-		},
-		scales: { // 设置 X 轴与 Y 轴
-			x: {
-				display: true,
-				title: {
-					display: true,
-					text: '人机综合表现对比分析',
-					font: {
-						size: 20, // 增大横轴标题字号
-						weight: 'bold' // 加粗
-					}
-				},
-				offset: true,
-				grid: {
-					display: false // 隐藏纵向网格线
-				},
-				ticks: {
-					font: {
-						size: 12, // 增大横轴刻度字号
-						weight: 'bold'
-					}
-				}
-			},
-			y: {
-				display: true,
-				min: 0, // y轴从0开始
-				max: 100, // y轴最大100
-				ticks: {
-					stepSize: 20, // 步长为20
-					font: {
-						size: 12, // 增大纵轴刻度字号
-						weight: 'bold'
-					}
-				},
-				title: {
-					display: true,
-					text: 'AVERAGE(%)',
-					font: {
-						size: 20, // 增大纵轴标题字号
-						weight: 'bold'
-					}
-				},
-				grid: {
-					display: true,
-					color: 'rgba(0,0,0,0.1)'
-				}
-			}
-		}
-	}
-};
-const myChart = new Chart(ctx, config);
 
 // 颜色方案
 const colors = {
